@@ -8,11 +8,25 @@ export const POST = createFrames()(async (ctx) => {
 
   const balances = await getBalances(fid);
   
+  // Check for connected wallet
+  if (!balances.address_balances?.length) {
+    return { 
+      image: (
+        <div style={{ color: 'white', backgroundColor: 'black', padding: 20 }}>
+          No Base wallet detected
+        </div>
+      )
+    } as any;
+  }
+
+  // Get balance for our token from first connected wallet
+  const tokenBalance = balances.address_balances[0].tokens[TOKEN_ADDRESS] || 0;
+
   return {
     image: (
       <div style={{ color: 'white', backgroundColor: 'black', padding: 20 }}>
-        Balance: {balances.tokenBalance} [TOKEN]
+        Balance: {tokenBalance} DEGEN
       </div>
-    )
+    ),
   };
 });

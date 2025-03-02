@@ -65,7 +65,7 @@
   ```  
   Completion: Balance endpoint returns numeric value with placeholder
 
-- [ ] Task 3: Add wallet linkage and token presence checks  
+- [x] Task 3: Add wallet linkage and token presence checks  
   File: app/frames/balance/route.ts  
   Action: Modify  
   Description: Handle empty addresses and missing token balances  

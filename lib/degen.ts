@@ -1,4 +1,4 @@
-const TOKEN_ADDRESS = '0x4ed...fed'; // TODO: Replace with full contract address
+export const TOKEN_ADDRESS = '0x4ed...fed'; // TODO: Replace with full contract address
 
 export async function getBalances(fid: number) {
   const response = await fetch(
