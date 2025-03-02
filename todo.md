@@ -1,4 +1,4 @@
-- [ ] Task 1: Create root frame with balance check prompt  
+- [x] Task 1: Create root frame with balance check prompt  
   File: app/frames/index.ts  
   Action: Create  
   Description: Implement base frame with balance check UI elements  
