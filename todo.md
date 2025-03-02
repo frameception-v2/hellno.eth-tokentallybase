@@ -80,7 +80,7 @@
   UI Components: "No Base wallet" and "0 [TOKEN]" displays  
   Completion: Proper messages show for unlinked wallets/missing tokens
 
-- [ ] Task 4: Implement API authentication  
+- [x] Task 4: Implement API authentication  
   File: lib/degen.ts  
   Action: Modify  
   Description: Add authorization header for API calls  
