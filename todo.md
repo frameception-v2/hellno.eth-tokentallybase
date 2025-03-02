@@ -28,7 +28,7 @@
   UI Components: Text prompt image, "Check Balance" button  
   Completion: Frame renders with image and button that navigates to /balance (404 expected)
 
-- [ ] Task 2: Implement balance check endpoint and API client  
+- [x] Task 2: Implement balance check endpoint and API client  
   File: app/frames/balance/route.ts  
   Action: Create  
   Description: Create POST endpoint for balance checks  
