@@ -1,10 +1,10 @@
+/** @jsxImportSource react */
 import { createFrames } from 'frames.js/next';
-import React from "react";
 import { getBalances } from '../../../lib/degen';
 
 export const POST = createFrames()(async (ctx) => {
   const fid = ctx.message?.requesterFid;
-  if (!fid) return { image: <div>Missing FID</div> } as any;
+  if (!fid) return { image: (<div>Missing FID</div>) as any };
 
   const balances = await getBalances(fid);
   
